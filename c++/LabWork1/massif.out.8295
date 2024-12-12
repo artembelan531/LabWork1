@@ -1,0 +1,360 @@
+desc: (none)
+cmd: ./ImageProcessing
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2310009
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2428017
+mem_heap_B=73176
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2429684
+mem_heap_B=81368
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2438161
+mem_heap_B=831368
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2527594
+mem_heap_B=831368
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=detailed
+n3: 831368 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 750000 0x10CC76: __gnu_cxx::new_allocator<unsigned char>::allocate(unsigned long, void const*) (in /home/artem/c++/Labs/ImageProcessing)
+  n1: 750000 0x10C8BD: std::allocator_traits<std::allocator<unsigned char> >::allocate(std::allocator<unsigned char>&, unsigned long) (in /home/artem/c++/Labs/ImageProcessing)
+   n1: 750000 0x10C565: std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_allocate(unsigned long) (in /home/artem/c++/Labs/ImageProcessing)
+    n1: 750000 0x10BFE0: std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_create_storage(unsigned long) (in /home/artem/c++/Labs/ImageProcessing)
+     n1: 750000 0x10B8B4: std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_base(unsigned long, std::allocator<unsigned char> const&) (in /home/artem/c++/Labs/ImageProcessing)
+      n1: 750000 0x10B76E: std::vector<unsigned char, std::allocator<unsigned char> >::vector(unsigned long, std::allocator<unsigned char> const&) (in /home/artem/c++/Labs/ImageProcessing)
+       n0: 750000 0x10AEB3: main (in /home/artem/c++/Labs/ImageProcessing)
+ n1: 72704 0x490A939: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 8664 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=2527594
+mem_heap_B=823176
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=2529674
+mem_heap_B=822704
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2529990
+mem_heap_B=1572704
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=48925679
+mem_heap_B=1572704
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=peak
+n3: 1572704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1500000 0x10CC76: __gnu_cxx::new_allocator<unsigned char>::allocate(unsigned long, void const*) (in /home/artem/c++/Labs/ImageProcessing)
+  n1: 1500000 0x10C8BD: std::allocator_traits<std::allocator<unsigned char> >::allocate(std::allocator<unsigned char>&, unsigned long) (in /home/artem/c++/Labs/ImageProcessing)
+   n1: 1500000 0x10C565: std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_allocate(unsigned long) (in /home/artem/c++/Labs/ImageProcessing)
+    n1: 1500000 0x10BFE0: std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_create_storage(unsigned long) (in /home/artem/c++/Labs/ImageProcessing)
+     n2: 1500000 0x10B8B4: std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_base(unsigned long, std::allocator<unsigned char> const&) (in /home/artem/c++/Labs/ImageProcessing)
+      n1: 750000 0x10B30E: std::vector<unsigned char, std::allocator<unsigned char> >::vector(std::vector<unsigned char, std::allocator<unsigned char> > const&) (in /home/artem/c++/Labs/ImageProcessing)
+       n1: 750000 0x10A4C1: rotateClockwiseInPlace(std::vector<unsigned char, std::allocator<unsigned char> >&, int, int) (in /home/artem/c++/Labs/ImageProcessing)
+        n0: 750000 0x10AF46: main (in /home/artem/c++/Labs/ImageProcessing)
+      n1: 750000 0x10B76E: std::vector<unsigned char, std::allocator<unsigned char> >::vector(unsigned long, std::allocator<unsigned char> const&) (in /home/artem/c++/Labs/ImageProcessing)
+       n0: 750000 0x10AEB3: main (in /home/artem/c++/Labs/ImageProcessing)
+ n1: 72704 0x490A939: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 0 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=48925679
+mem_heap_B=822704
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=48926759
+mem_heap_B=823176
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=48927251
+mem_heap_B=831368
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=48931877
+mem_heap_B=823176
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=48932256
+mem_heap_B=822704
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=48932673
+mem_heap_B=822744
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=48933277
+mem_heap_B=822864
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=48933703
+mem_heap_B=822904
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=48934434
+mem_heap_B=822944
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=48935165
+mem_heap_B=822984
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=detailed
+n3: 822984 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 750000 0x10CC76: __gnu_cxx::new_allocator<unsigned char>::allocate(unsigned long, void const*) (in /home/artem/c++/Labs/ImageProcessing)
+  n1: 750000 0x10C8BD: std::allocator_traits<std::allocator<unsigned char> >::allocate(std::allocator<unsigned char>&, unsigned long) (in /home/artem/c++/Labs/ImageProcessing)
+   n1: 750000 0x10C565: std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_allocate(unsigned long) (in /home/artem/c++/Labs/ImageProcessing)
+    n1: 750000 0x10BFE0: std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_create_storage(unsigned long) (in /home/artem/c++/Labs/ImageProcessing)
+     n2: 750000 0x10B8B4: std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_base(unsigned long, std::allocator<unsigned char> const&) (in /home/artem/c++/Labs/ImageProcessing)
+      n1: 750000 0x10B76E: std::vector<unsigned char, std::allocator<unsigned char> >::vector(unsigned long, std::allocator<unsigned char> const&) (in /home/artem/c++/Labs/ImageProcessing)
+       n0: 750000 0x10AEB3: main (in /home/artem/c++/Labs/ImageProcessing)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x490A939: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 280 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=48935896
+mem_heap_B=823024
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=48936627
+mem_heap_B=823064
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=48937211
+mem_heap_B=823024
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=48943531
+mem_heap_B=1573024
+mem_heap_extra_B=120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=2169119220
+mem_heap_B=823024
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=2169119496
+mem_heap_B=822984
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=2169119720
+mem_heap_B=822944
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=2169119944
+mem_heap_B=822904
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=2169120168
+mem_heap_B=822864
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=2169120392
+mem_heap_B=822824
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=detailed
+n3: 822824 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 750000 0x10CC76: __gnu_cxx::new_allocator<unsigned char>::allocate(unsigned long, void const*) (in /home/artem/c++/Labs/ImageProcessing)
+  n1: 750000 0x10C8BD: std::allocator_traits<std::allocator<unsigned char> >::allocate(std::allocator<unsigned char>&, unsigned long) (in /home/artem/c++/Labs/ImageProcessing)
+   n1: 750000 0x10C565: std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_allocate(unsigned long) (in /home/artem/c++/Labs/ImageProcessing)
+    n1: 750000 0x10BFE0: std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_M_create_storage(unsigned long) (in /home/artem/c++/Labs/ImageProcessing)
+     n2: 750000 0x10B8B4: std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_base(unsigned long, std::allocator<unsigned char> const&) (in /home/artem/c++/Labs/ImageProcessing)
+      n1: 750000 0x10B76E: std::vector<unsigned char, std::allocator<unsigned char> >::vector(unsigned long, std::allocator<unsigned char> const&) (in /home/artem/c++/Labs/ImageProcessing)
+       n0: 750000 0x10AEB3: main (in /home/artem/c++/Labs/ImageProcessing)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x490A939: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 120 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=2169120553
+mem_heap_B=822704
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=2169121633
+mem_heap_B=823176
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=2169122125
+mem_heap_B=831368
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=2169123175
+mem_heap_B=823176
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=2169123554
+mem_heap_B=822704
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=2169127584
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=2169139822
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
