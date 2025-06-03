@@ -1,5 +1,6 @@
 CXX = g++
-CXXFLAGS = -Werror -Wpedantic -Wall
+CXXFLAGS = -fopenmp -Werror -Wpedantic -Wall
+
 SRC_FILES = $(wildcard *.cpp)
 OBJ_FILES = $(SRC_FILES:.cpp=.o)
 EXECUTABLE = ImageProcessing

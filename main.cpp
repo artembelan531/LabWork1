@@ -1,5 +1,7 @@
 /* Belan Artem Vladislavovich
 ./Labwork1 st135609@student.spbu.ru*/
+/* Belan Artem Vladislavovich
+./Labwork1 st135609@student.spbu.ru*/
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -7,6 +9,7 @@
 #include <cmath>
 #include <cstdint>
 #include <algorithm>
+#include <omp.h> // <-- добавлено
 
 void rotateClockwiseInPlace(std::vector<uint8_t>& imagePixels, int width, int height)
 {
@@ -51,6 +54,7 @@ void applyGaussianBlurInPlace(std::vector<uint8_t>& imagePixels, int width, int 
 
     std::vector<uint8_t> temp = imagePixels;
 
+    #pragma omp parallel for collapse(2) // <-- добавлено
     for (int y = 0; y < height; ++y)
     {
         for (int x = 0; x < width; ++x)
@@ -117,9 +121,9 @@ int main()
     outFile.write(reinterpret_cast<char*>(&dibHeader), sizeof(DIBitmapHeader));
     outFile.write(reinterpret_cast<char*>(&bmpColorHeader), sizeof(BitmapColorHeader));
     outFile.write(reinterpret_cast<char*>(imagePixels.data()), imagePixels.size());
-    outFile.close();
+    outFile.close();applyGaussianBlurInPlace(imagePixels, width, height);
 
-    applyGaussianBlurInPlace(imagePixels, width, height);std::ofstream blurFile("blurred_image.bmp", std::ios::binary);
+    std::ofstream blurFile("blurred_image.bmp", std::ios::binary);
     blurFile.write(reinterpret_cast<char*>(&bmpHeader), sizeof(BitmapHeader));
     blurFile.write(reinterpret_cast<char*>(&dibHeader), sizeof(DIBitmapHeader));
     blurFile.write(reinterpret_cast<char*>(&bmpColorHeader), sizeof(BitmapColorHeader));
